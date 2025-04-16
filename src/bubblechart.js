@@ -299,7 +299,7 @@ export const renderBubbleChart = async ({
     filter_str += age ? `_${age}` : ''
 
     try {
-        const aggregateData = await d3.json(`/data/aggregate${filter_str}.json`)
+        const aggregateData = await d3.json(`${import.meta.env.BASE_URL}/data/aggregate${filter_str}.json`)
         return render(aggregateData, { bubbleSetActive })
     } catch (error) {
         console.error(error)

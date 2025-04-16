@@ -16,6 +16,12 @@ Languages are also categorized by:
 
 ---
 
+## 🚀 Live demo
+
+> https://dontepsu.github.io/programming-language-popularity-evolution/
+
+---
+
 ## 📦 Setup Instructions
 
 ```bash

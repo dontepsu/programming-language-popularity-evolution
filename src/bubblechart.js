@@ -29,7 +29,7 @@ const getAxis = (width, height, maxX, maxY) => {
         .range([margin.left, width - margin.right]);
 
     const y = d3.scaleLog()
-        .domain([MIN_VALUE, maxY ])
+        .domain([MIN_VALUE, maxY])
         .range([height - margin.bottom, margin.top]);
 
     return [x, y];
@@ -59,25 +59,40 @@ const createColorScale = (colorKeys) => {
  * @param {number} maxY - Maximum value for the y axis.
  * @returns {Function} A function that accepts the x and y scale functions to render the axes.
  */
-const setUpAxis = (svg, height, maxX, maxY) => (x, y) => {
+const setUpAxis = (svg, width, height, maxX, maxY) => (x, y) => {
     const xTicks = d3.range(0, 10).map(i =>
         Math.exp(Math.log(MIN_VALUE) + (i / 9) * (Math.log(maxX) - Math.log(MIN_VALUE)))
-      );
-      const yTicks = d3.range(0, 10).map(i =>
+    );
+    const yTicks = d3.range(0, 10).map(i =>
         Math.exp(Math.log(MIN_VALUE) + (i / 9) * (Math.log(maxY) - Math.log(MIN_VALUE)))
-      );
-    
+    );
+
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
         .call(d3.axisBottom(x)
-                .tickValues(xTicks)
-                .tickFormat(d3.format(".01%")));
-    
+            .tickValues(xTicks)
+            .tickFormat(d3.format(".01%")));
+
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft(y)
-                .tickValues(yTicks)
-                .tickFormat(d3.format(".01%")));
+            .tickValues(yTicks)
+            .tickFormat(d3.format(".01%")));
+
+    svg.append("text")
+        .attr("class", "x-axis-label")
+        .attr("x", width / 2)
+        .attr("y", height - margin.bottom - 20)
+        .style("text-anchor", "middle")
+        .text("Programming languages used past year");
+
+    svg.append("text")
+        .attr("class", "y-axis-label")
+        .attr("x", -height / 2)
+        .attr("y", 70)
+        .attr("transform", "rotate(-90)")
+        .attr("text-anchor", "middle")
+        .text("Programming languages interested to use");
 };
 
 
@@ -143,7 +158,7 @@ const render = (aggregateData) => {
     const maxX = max_used + MAX_D
     const maxY = max_interested + MAX_D
     const [x, y] = getAxis(width, height, maxX, maxY);
-    const updateAxis = setUpAxis(svg, height, maxX,maxY);
+    const updateAxis = setUpAxis(svg, width, height, maxX, maxY);
     updateAxis(x, y);
 
     // Define a radius scale for the circles based on avg_salary.
@@ -286,7 +301,8 @@ export const renderBubbleChart = async ({
     try {
         const aggregateData = await d3.json(`/data/aggregate${filter_str}.json`)
         return render(aggregateData, { bubbleSetActive })
-    } catch {
+    } catch (error) {
+        console.error(error)
         // TODO: fix this
         alert('No such filter combination')
         const params = new URLSearchParams(window.location.search);

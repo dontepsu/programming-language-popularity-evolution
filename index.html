@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>D3 BubbleSets</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div id="screen-warning">
+    ⚠️ This page requires a screen width of at least <strong>1080px</strong> for full functionality. Please make you browser window wider or use a larger screen.
+  </div>
+
+  <div id="page">
+    <div id="filters">
+      <div class="filter-group">
+        <label for="filter_age">Filter by Age:</label>
+        <select id="filter_age">
+          <option value="">All Ages</option>
+          <option value="under_18_years_old">Under 18</option>
+          <option value="18-24_years_old">18-24</option>
+          <option value="25-34_years_old">25-34</option>
+[]          <option value="35-44_years_old">35-44</option>
+          <option value="45-54_years_old">45-54</option>
+          <option value="55-64_years_old">55-64</option>
+          <option value="65_years_or_older">65 or older</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filter_country">Filter by Country:</label>
+        <input id="filter_country" class="awesomplete" type="search" placeholder="Search..." />
+      </div>
+
+      <div class="filter-group checkbox-group">
+        <input id="filter_bubbleset" type="checkbox" value="bubbleSetActive" />
+        <label for="filter_bubbleset">Group items</label>
+      </div>
+    </div>
+
+    <div id="chart-container">
+      <svg id="viz" preserveAspectRatio="none" width="1024" height="720"></svg>
+    </div>
+
+    <div id="viz-description">
+      <p>
+        This animated bubble chart visualizes the evolution of programming language popularity using
+        <strong>Stack Overflow Developer Survey</strong> data.
+      </p>
+      <p>
+        The <strong>x-axis</strong> shows the relative usage frequency, and the <strong>y-axis</strong> shows interest
+        (developers who want to use a language).
+        Both axes use a <strong>logarithmic scale</strong> to reduce clutter and improve visibility of smaller values.
+      </p>
+      <p>
+        Each bubble's <strong>size</strong> represents the average reported salary for that language.
+        The <strong>color</strong> encodes a cluster based on the language's
+        <em>memory management</em> strategy and whether it's <em>compiled or interpreted</em>.
+      </p>
+      <p>
+        You can <strong>click a language bubble</strong> to <em>track or untrack</em> it during the animation.
+        This lets you follow a specific language’s trajectory across years.
+      </p>
+      <p style="margin-top: 1em;">
+        <a href="https://github.com/dontepsu/programming-language-popularity-evolution" target="_blank" rel="noopener noreferrer">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+               alt="GitHub" width="24" height="24"
+               style="vertical-align: middle; margin-right: 6px;">
+          View project on GitHub
+        </a>
+      </p>
+    </div>
+    
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

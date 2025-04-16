@@ -1,0 +1,88 @@
+{
+  "country": "Romania",
+  "age": "65 years or older",
+  "max_used": 1.0,
+  "max_interested": 1.0,
+  "years": {
+    "2019": [
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.5,
+        "interested": 0.5
+      },
+      {
+        "language": "C++",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.5,
+        "interested": 0.5
+      }
+    ],
+    "2020": [
+      {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "C++",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "JavaScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.25
+      }
+    ],
+    "2022": [
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.5,
+        "interested": 0.0
+      },
+      {
+        "language": "Python",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.5,
+        "interested": 1.0
+      }
+    ],
+    "2024": [
+      {
+        "language": "Clojure",
+        "avg_salary": 64444.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 1.0,
+        "interested": 1.0
+      }
+    ]
+  }
+}

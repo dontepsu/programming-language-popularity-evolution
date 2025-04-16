@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/dontepsu/programming-language-popularity-evolution/',
+  base: '/programming-language-popularity-evolution/',
 });

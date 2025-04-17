@@ -11,9 +11,7 @@ export default defineConfig(({ mode }) => {
             name: 'html-transform',
             apply: 'build',
             transformIndexHtml: (html) => {
-                console.log('still prod', isProd)
                 if (!isProd) return html;
-                console.log('yes replace')
 
                 return html.replace(
                     '</head>',

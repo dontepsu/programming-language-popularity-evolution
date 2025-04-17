@@ -41,9 +41,9 @@ export const registerFilters = () => {
         list: countries,
         minChars: 1,
         autoFirst: true,
-    
+
     });
-    
+
     countryAutocompleteInput.addEventListener('awesomplete-selectcomplete', (event) => {
         event.preventDefault()
         const params = new URLSearchParams(window.location.search);
@@ -63,7 +63,7 @@ export const registerFilters = () => {
             window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
         }
     })
-    
+
     ageSelect.addEventListener('change', (event) => {
         event.preventDefault()
         const params = new URLSearchParams(window.location.search);
@@ -87,6 +87,34 @@ export const registerFilters = () => {
 
         window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
     })
-    
+
 }
 
+// analytics
+
+if (import.meta.env.PROD) {
+    const ageSelect = document.getElementById("filter_age");
+    const countryInput = document.getElementById("filter_country");
+    const bubbleSetToggle = document.getElementById("filter_bubbleset");
+
+    ageSelect.addEventListener("change", () => {
+        gtag('event', 'filter_used', {
+            filter_type: 'age',
+            filter_value: ageSelect.value || 'all'
+        });
+    });
+
+    countryInput.addEventListener("change", () => {
+        gtag('event', 'filter_used', {
+            filter_type: 'country',
+            filter_value: countryInput.value || 'all'
+        });
+    });
+
+    bubbleSetToggle.addEventListener("change", () => {
+        gtag('event', 'filter_used', {
+            filter_type: 'bubbleset',
+            filter_value: bubbleSetToggle.checked ? 'enabled' : 'disabled'
+        });
+    });
+}

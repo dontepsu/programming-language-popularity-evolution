@@ -205,8 +205,8 @@ const render = (aggregateData) => {
                         trackedLanguages.add(d.language);
                         // track tracked langauges
                         if (import.meta.env.PROD) {
-                            gtag('event', 'filter_used', {
-                                filter_type: 'track_language',
+                            gtag('event', 'track_language', {
+                                filter_type: 'ball_circle',
                                 filter_value: d.language
                             });
                         }

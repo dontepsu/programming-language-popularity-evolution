@@ -84,7 +84,7 @@ const setUpAxis = (svg, width, height, maxX, maxY) => (x, y) => {
         .attr("x", width / 2)
         .attr("y", height - margin.bottom - 20)
         .style("text-anchor", "middle")
-        .text("Programming languages used past year");
+        .text("% of languages used the past year");
 
     svg.append("text")
         .attr("class", "y-axis-label")
@@ -92,7 +92,7 @@ const setUpAxis = (svg, width, height, maxX, maxY) => (x, y) => {
         .attr("y", 70)
         .attr("transform", "rotate(-90)")
         .attr("text-anchor", "middle")
-        .text("Programming languages interested to use");
+        .text("% of languages excited to use the next year");
 };
 
 

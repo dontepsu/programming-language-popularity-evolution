@@ -205,11 +205,9 @@ const render = (aggregateData) => {
                         trackedLanguages.add(d.language);
                         // track tracked langauges
                         if (import.meta.env.PROD) {
-                            ageSelect.addEventListener("change", () => {
-                                gtag('event', 'filter_used', {
-                                    filter_type: 'track_language',
-                                    filter_value: d.language
-                                });
+                            gtag('event', 'filter_used', {
+                                filter_type: 'track_language',
+                                filter_value: d.language
                             });
                         }
                     }

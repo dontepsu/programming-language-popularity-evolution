@@ -203,6 +203,15 @@ const render = (aggregateData) => {
                         trackedLanguages.delete(d.language);
                     } else {
                         trackedLanguages.add(d.language);
+                        // track tracked langauges
+                        if (import.meta.env.PROD) {
+                            ageSelect.addEventListener("change", () => {
+                                gtag('event', 'filter_used', {
+                                    filter_type: 'track_language',
+                                    filter_value: d.language
+                                });
+                            });
+                        }
                     }
                     svg.selectAll("circle")
                         .attr("stroke", d => trackedLanguages.has(d.language) ? "red" : "none")

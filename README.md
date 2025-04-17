@@ -34,7 +34,7 @@ npm run dev
 * Stack Overflow Developer Survey (2013–2024)
 * Raw survey responses were cleaned, normalized, and filtered into pre-aggregated JSON files for optimal performance
 
-You can regenerate these datasets using the companion Jupyter notebooks or data scripts.
+You can regenerate these datasets using this [notebook](https://github.com/dontepsu/programming-language-popularity-evolution/blob/main/data/data_cleaning.ipynb)
 
 ## 🧠 Features
 

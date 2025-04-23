@@ -1,4 +1,7 @@
 import * as d3 from "d3";
+import { interval, merge, of } from "rxjs";
+import { switchMap, map, startWith, takeUntil, scan, distinctUntilChanged, tap } from "rxjs/operators";
+
 
 import { updateBubbleOverlay } from './bubbleset'
 import { clamp, MIN_VALUE } from './util'
@@ -127,7 +130,7 @@ const createYearLabel = (svg, currentYear, width, height) =>
  * @param {Object} aggregateData - The aggregated data object with max_used, max_interested, and years.
  * @returns {Function} A cleanup function that stops the animation and clears the SVG.
  */
-const render = (aggregateData) => {
+const render = (aggregateData, { control$, event$ }) => {
     let cleanUpBubbleSet = null
 
     const { max_used, max_interested, years } = aggregateData;
@@ -269,21 +272,43 @@ const render = (aggregateData) => {
         }
     }
 
-    // Timer for the "slide show".
-    // TODO: make some nice slider? and configure the speed configurable.
-    let i = 0;
-    const yearsArray = yearKeys;
-    let timer = d3.interval(() => {
-        update(yearsArray[i % yearsArray.length]);
-        i++;
-    }, DEFAULT_CHANGE_INTERVAL);
+    const play$ = interval(DEFAULT_CHANGE_INTERVAL).pipe(map(() => ({ type: 'tick' })));
 
-    window.timer = timer
+    const reactiveYear$ = control$.pipe(
+        startWith({ type: 'play' }),
+        switchMap(event => {
+            if (event.type === 'play') {
+                return merge(
+                    play$,
+                    control$.pipe(takeUntil(play$)) // override with pause or year
+                );
+            }
+            return of(event);
+        }),
+        scan((yearIdx, event) => {
+            if (event.type === 'tick') return (yearIdx + 1) % yearKeys.length;
+            if (event.type === 'year') {
+                const idx = yearKeys.indexOf(event.value);
+                return idx === -1 ? yearIdx : idx;
+            }
+            return yearIdx;
+        }, 0),
+        distinctUntilChanged(),
+        tap(yearIdx => {
+            const year = yearKeys[yearIdx];
+            event$.next({ event: "year_changed", data: { year, index: yearIdx } });
+        }),
+    );
+
+    const subscription = reactiveYear$.subscribe(i => {
+        update(yearKeys[i]);
+    });
+
+
     return () => {
         // clean up
-        d3.select("#viz").selectAll("*").remove()
-        timer.stop()
-        timer = null
+        svg.selectAll("*").remove();
+        subscription.unsubscribe();
     }
 }
 
@@ -299,7 +324,9 @@ const render = (aggregateData) => {
 export const renderBubbleChart = async ({
     country = null,
     age = null,
-    bubbleSetActive = false
+    bubbleSetActive = false,
+    control$,
+    event$,
 } = {}) => {
     let filter_str = ''
     filter_str += country ? `_${country}` : ''
@@ -307,7 +334,13 @@ export const renderBubbleChart = async ({
 
     try {
         const aggregateData = await d3.json(`${import.meta.env.BASE_URL}/data/aggregate${filter_str}.json`)
-        return render(aggregateData, { bubbleSetActive })
+        event$.next({
+            event: BubbleChartEvents.data_loaded,
+            data: {
+                years: Object.keys(aggregateData.years),
+            }
+        })
+        return render(aggregateData, { bubbleSetActive, control$, event$ })
     } catch (error) {
         console.error(error)
         // TODO: fix this
@@ -316,4 +349,9 @@ export const renderBubbleChart = async ({
         window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
         return () => { }
     }
+}
+
+
+export const BubbleChartEvents=  {
+    data_loaded: 'data_loaded',
 }

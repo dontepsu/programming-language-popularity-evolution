@@ -133,3 +133,74 @@ body {
   }
 }
 
+/* slider */
+
+#viz-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#play-toggle {
+  width: 48px;
+  height: 48px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#play-toggle:hover {
+  background-color: #2563eb;
+}
+
+#play-toggle:active {
+  background-color: #1d4ed8;
+}
+
+#year-slider {
+  flex-grow: 1;
+  height: 6px;
+  border-radius: 4px;
+  background: #d1d5db; /* Tailwind gray-300 */
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#year-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#year-slider::-webkit-slider-thumb:hover {
+  background: #2563eb;
+}
+
+#year-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#year-slider::-moz-range-thumb:hover {
+  background: #2563eb;
+}

@@ -58,11 +58,35 @@
     ],
     "2022": [
       {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
         "used": 0.5,
+        "interested": 0.25
+      },
+      {
+        "language": "C++",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "JavaScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.25,
         "interested": 0.25
       },
       {
@@ -76,11 +100,51 @@
     ],
     "2024": [
       {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.5,
+        "interested": 0.25
+      },
+      {
+        "language": "C++",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
         "language": "Clojure",
         "avg_salary": 64444.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 1.0,
+        "interested": 1.0
+      },
+      {
+        "language": "JavaScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.25
+      },
+      {
+        "language": "Python",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.5,
         "interested": 1.0
       }
     ]

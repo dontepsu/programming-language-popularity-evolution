@@ -136,6 +136,14 @@
         "interested": 0.09375
       },
       {
+        "language": "Go",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.03896103896103896,
+        "interested": 0.020833333333333332
+      },
+      {
         "language": "Java",
         "avg_salary": 23925.0,
         "execution_model": "compiled",
@@ -160,12 +168,36 @@
         "interested": 0.0625
       },
       {
+        "language": "Perl",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.05454545454545454,
+        "interested": 0.020833333333333332
+      },
+      {
         "language": "Python",
         "avg_salary": 37816.666666666664,
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.125,
         "interested": 0.15625
+      },
+      {
+        "language": "R",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.03636363636363636,
+        "interested": 0.020833333333333332
+      },
+      {
+        "language": "Ruby",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.012987012987012988,
+        "interested": 0.020833333333333332
       },
       {
         "language": "SQL",
@@ -518,6 +550,22 @@
         "interested": 0.05
       },
       {
+        "language": "Go",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.03007518796992481,
+        "interested": 0.03
+      },
+      {
+        "language": "Haskell",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.02
+      },
+      {
         "language": "Java",
         "avg_salary": 57494.0,
         "execution_model": "compiled",
@@ -596,6 +644,22 @@
         "memory_management": "na",
         "used": 0.22105263157894736,
         "interested": 0.2125
+      },
+      {
+        "language": "Scala",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.007518796992481203,
+        "interested": 0.01
+      },
+      {
+        "language": "Swift",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.015037593984962405,
+        "interested": 0.02
       }
     ],
     "2023": [
@@ -784,6 +848,14 @@
         "memory_management": "manual",
         "used": 0.05102040816326531,
         "interested": 0.04891304347826087
+      },
+      {
+        "language": "Clojure",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.004081632653061225,
+        "interested": 0.00546448087431694
       },
       {
         "language": "Dart",

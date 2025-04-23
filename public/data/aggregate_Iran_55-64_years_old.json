@@ -40,6 +40,14 @@
     ],
     "2021": [
       {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.3333333333333333,
+        "interested": 0.0
+      },
+      {
         "language": "C#",
         "avg_salary": 76956.0,
         "execution_model": "compiled",
@@ -73,6 +81,22 @@
       }
     ],
     "2022": [
+      {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.3333333333333333,
+        "interested": 0.0
+      },
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.2
+      },
       {
         "language": "Dart",
         "avg_salary": -1.0,
@@ -108,12 +132,44 @@
     ],
     "2023": [
       {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.3333333333333333,
+        "interested": 0.0
+      },
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.2
+      },
+      {
+        "language": "Dart",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.25
+      },
+      {
         "language": "JavaScript",
         "avg_salary": 236225.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.5,
         "interested": 0.5
+      },
+      {
+        "language": "Python",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.25,
+        "interested": 0.25
       },
       {
         "language": "SQL",
@@ -148,6 +204,14 @@
         "memory_management": "manual",
         "used": 0.13333333333333333,
         "interested": 0.0
+      },
+      {
+        "language": "Dart",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.25
       },
       {
         "language": "JavaScript",

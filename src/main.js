@@ -1,7 +1,7 @@
 import { fromEventPattern, merge, map, startWith, distinctUntilChanged, Subject, filter } from "rxjs";
 
 import { registerFilters } from './filters'
-import { renderBubbleChart } from './bubblechart'
+import { renderBubbleChart, BubbleChartEvents } from './bubblechart'
 
 import './style.css'
 
@@ -24,14 +24,14 @@ const registerAnimationControls = () => {
 
 
     bubbleChartEvent$.subscribe(e => {
-        if (e.event === "year_changed") {
+        if (e.event === BubbleChartEvents.year_changed) {
             const idx = years.findIndex(y => +y === +e.data.year);
             if (idx !== -1 && +yearSlider.value !== idx) {
                 yearSlider.value = idx;
             }
         }
 
-        if (e.event === "data_loaded") {
+        if (e.event === BubbleChartEvents.data_loaded) {
             years = e.data.years;
             yearSlider.min = 0;
             yearSlider.max = years.length - 1;
@@ -57,10 +57,46 @@ const registerAnimationControls = () => {
     });
 };
 
+// Helper to turn colorKey into readable text
+function legendLabelForKey(key) {
+    const [exec, mem] = key.split("-");
+    const execLabel = exec === "compiled" ? "Compiled" : "Interpreted";
+    const memLabel = mem === "gc" ? "GC" : mem === "manual" ? "Manual" : "Other";
+    return `${execLabel}, ${memLabel} memory`;
+}
+
+
+function renderColorLegend(colorScale) {
+    const container = document.querySelector("#color-legend .legend-grid");
+    container.innerHTML = ""; // Clear previous entries
+
+    colorScale.domain().forEach(key => {
+        const item = document.createElement("div");
+        item.className = "legend-item";
+
+        const box = document.createElement("div");
+        box.className = "legend-color";
+        box.style.backgroundColor = colorScale(key);
+
+        const label = document.createElement("span");
+        label.textContent = legendLabelForKey(key); // A readable label
+
+        item.appendChild(box);
+        item.appendChild(label);
+        container.appendChild(item);
+    });
+}
+
 
 // Register the filters i.e attach listeners etc
 registerFilters()
 registerAnimationControls()
+
+bubbleChartEvent$.pipe(
+    filter(({ event }) => event === BubbleChartEvents.color_scale_created)
+).subscribe(e => {
+    renderColorLegend(e.data)
+})
 
 // We use the query string to store parameters. It's a nice global state 🙄
 const originalPushState = history.pushState;
@@ -99,6 +135,6 @@ reloadData$.subscribe(async (params) => {
     cleanup = await renderBubbleChart({
         ...params,
         event$: bubbleChartEvent$,
-        control$: bubbleControl$.asObservable(), 
+        control$: bubbleControl$.asObservable(),
     })
 });

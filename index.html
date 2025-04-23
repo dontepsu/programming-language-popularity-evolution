@@ -14,28 +14,40 @@
 
   <div id="page">
     <div id="filters">
-      <div class="filter-group">
-        <label for="filter_age">Filter by Age:</label>
-        <select id="filter_age">
-          <option value="">All Ages</option>
-          <option value="under_18_years_old">Under 18</option>
-          <option value="18-24_years_old">18-24</option>
-          <option value="25-34_years_old">25-34</option>
-          <option value="35-44_years_old">35-44</option>
-          <option value="45-54_years_old">45-54</option>
-          <option value="55-64_years_old">55-64</option>
-          <option value="65_years_or_older">65 or older</option>
-        </select>
+      <div class="filter-row">
+
+        <div class="filter-group">
+          <label for="filter_age">Filter by Age:</label>
+          <select id="filter_age">
+            <option value="">All Ages</option>
+            <option value="under_18_years_old">Under 18</option>
+            <option value="18-24_years_old">18-24</option>
+            <option value="25-34_years_old">25-34</option>
+            <option value="35-44_years_old">35-44</option>
+            <option value="45-54_years_old">45-54</option>
+            <option value="55-64_years_old">55-64</option>
+            <option value="65_years_or_older">65 or older</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter_country">Filter by Country:</label>
+          <input id="filter_country" class="awesomplete" type="search" placeholder="Search..." />
+        </div>
+
+        <div id="color-legend" class="filter-group">
+          <div class="legend-grid">
+            <!-- color blocks dynamically filled by JS -->
+          </div>
+        </div>
+
       </div>
 
-      <div class="filter-group">
-        <label for="filter_country">Filter by Country:</label>
-        <input id="filter_country" class="awesomplete" type="search" placeholder="Search..." />
-      </div>
-
-      <div class="filter-group checkbox-group">
-        <input id="filter_bubbleset" type="checkbox" value="bubbleSetActive" />
-        <label for="filter_bubbleset">Group items</label>
+      <div class="filter-row">
+        <div class="filter-group checkbox-group">
+          <input id="filter_bubbleset" type="checkbox" value="bubbleSetActive" />
+          <label for="filter_bubbleset">Group items</label>
+        </div>
       </div>
     </div>
 
@@ -44,7 +56,7 @@
     </div>
 
     <div id="viz-controls">
-      <button id="play-toggle">▶</button>
+      <button id="play-toggle">⏸</button>
       <input type="range" id="year-slider" min="0" max="0" value="0">
     </div>
 

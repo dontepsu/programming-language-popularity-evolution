@@ -149,6 +149,11 @@ const render = (aggregateData, { control$, event$ }) => {
     const colorKeys = flatData.map(d => d.colorKey);
     const colorScale = createColorScale(colorKeys);
 
+    event$.next({
+        event: BubbleChartEvents.color_scale_created,
+        data: colorScale,
+    })
+
     const yearKeys = Object.keys(years).map(Number).sort((a, b) => a - b);
     let currentYear = d3.min(yearKeys);
 
@@ -296,7 +301,7 @@ const render = (aggregateData, { control$, event$ }) => {
         distinctUntilChanged(),
         tap(yearIdx => {
             const year = yearKeys[yearIdx];
-            event$.next({ event: "year_changed", data: { year, index: yearIdx } });
+            event$.next({ event: BubbleChartEvents.year_changed, data: { year, index: yearIdx } });
         }),
     );
 
@@ -354,4 +359,6 @@ export const renderBubbleChart = async ({
 
 export const BubbleChartEvents=  {
     data_loaded: 'data_loaded',
+    year_changed: 'year_changed',
+    color_scale_created: 'color_scale_created'
 }

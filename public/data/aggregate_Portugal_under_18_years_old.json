@@ -1,8 +1,8 @@
 {
   "country": "Portugal",
   "age": "Under 18 years old",
-  "max_used": 0.21875,
-  "max_interested": 0.2608695652173913,
+  "max_used": 0.17142857142857143,
+  "max_interested": 0.1717171717171717,
   "years": {
     "2016": [
       {
@@ -10,64 +10,72 @@
         "avg_salary": 10000.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.15492957746478872,
-        "interested": 0.024390243902439025
+        "used": 0.14285714285714285,
+        "interested": 0.020202020202020204
       },
       {
         "language": "C#",
         "avg_salary": 10000.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.07042253521126761,
-        "interested": 0.08536585365853659
+        "used": 0.06493506493506493,
+        "interested": 0.0707070707070707
       },
       {
         "language": "C++",
         "avg_salary": 10000.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.08450704225352113,
-        "interested": 0.17073170731707318
+        "used": 0.07792207792207792,
+        "interested": 0.1414141414141414
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.017241379310344827
+        "used": 0.012987012987012988,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Java",
-        "avg_salary": 10000.0,
+        "avg_salary": 10833.333333333334,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.15492957746478872,
-        "interested": 0.12195121951219512
+        "used": 0.14285714285714285,
+        "interested": 0.1717171717171717
       },
       {
         "language": "JavaScript",
-        "avg_salary": 11000.0,
+        "avg_salary": 11666.666666666666,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.1267605633802817,
-        "interested": 0.13414634146341464
+        "used": 0.11688311688311688,
+        "interested": 0.12121212121212122
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.014084507042253521,
-        "interested": 0.012195121951219513
+        "used": 0.012987012987012988,
+        "interested": 0.010101010101010102
       },
       {
         "language": "PHP",
         "avg_salary": 11250.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.11267605633802817,
-        "interested": 0.12195121951219512
+        "used": 0.1038961038961039,
+        "interested": 0.10101010101010101
       },
       {
         "language": "Perl",
@@ -75,129 +83,185 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.012195121951219513
+        "interested": 0.010101010101010102
       },
       {
         "language": "Python",
         "avg_salary": 11666.666666666666,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.11267605633802817,
-        "interested": 0.15853658536585366
+        "used": 0.1038961038961039,
+        "interested": 0.13131313131313133
       },
       {
         "language": "Ruby",
         "avg_salary": 10000.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.024390243902439025
+        "used": 0.02857142857142857,
+        "interested": 0.020202020202020204
       },
       {
         "language": "SQL",
         "avg_salary": 11000.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.14084507042253522,
-        "interested": 0.0975609756097561
+        "used": 0.12987012987012986,
+        "interested": 0.08080808080808081
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.08080808080808081
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": 10000.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.036585365853658534
+        "used": 0.07792207792207792,
+        "interested": 0.030303030303030304
       }
     ],
     "2018": [
+      {
+        "language": "Bash",
+        "avg_salary": 1464.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.05714285714285714,
+        "interested": 0.05
+      },
       {
         "language": "C",
         "avg_salary": 1464.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.08695652173913043,
-        "interested": 0.10344827586206896
+        "used": 0.05714285714285714,
+        "interested": 0.075
       },
       {
         "language": "C#",
         "avg_salary": 29376.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.13043478260869565,
-        "interested": 0.10344827586206896
+        "used": 0.08571428571428572,
+        "interested": 0.075
       },
       {
         "language": "C++",
         "avg_salary": 20072.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.043478260869565216,
-        "interested": 0.10344827586206896
+        "used": 0.02857142857142857,
+        "interested": 0.075
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.025
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.034482758620689655
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.017241379310344827
+        "used": 0.012987012987012988,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": 12628.8,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.17142857142857143,
+        "interested": 0.1
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
+        "used": 0.02857142857142857,
+        "interested": 0.025
       },
       {
         "language": "Java",
         "avg_salary": 8442.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.10344827586206896
+        "used": 0.02857142857142857,
+        "interested": 0.075
       },
       {
         "language": "JavaScript",
         "avg_salary": 12628.8,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.17391304347826086,
-        "interested": 0.10344827586206896
+        "used": 0.11428571428571428,
+        "interested": 0.075
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.025
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": 15420.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.017386369499045554,
-        "interested": 0.06896551724137931
+        "used": 0.014202546222250657,
+        "interested": 0.05
       },
       {
         "language": "PHP",
         "avg_salary": 1464.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.13043478260869565,
-        "interested": 0.034482758620689655
+        "used": 0.08571428571428572,
+        "interested": 0.025
       },
       {
         "language": "Perl",
@@ -205,437 +269,685 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.012195121951219513
+        "interested": 0.010101010101010102
       },
       {
         "language": "Python",
         "avg_salary": 1464.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.08695652173913043,
-        "interested": 0.10344827586206896
+        "used": 0.05714285714285714,
+        "interested": 0.075
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
+        "used": 0.02857142857142857,
+        "interested": 0.025
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
+        "used": 0.02857142857142857,
+        "interested": 0.025
       },
       {
         "language": "SQL",
         "avg_salary": 1464.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.13043478260869565,
-        "interested": 0.10344827586206896
+        "used": 0.08571428571428572,
+        "interested": 0.075
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.08080808080808081
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.036585365853658534
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": 29376.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.05714285714285714,
+        "interested": 0.025
       }
     ],
     "2019": [
       {
-        "language": "C",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "manual",
-        "used": 0.09375,
-        "interested": 0.09523809523809523
-      },
-      {
-        "language": "C#",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.0625,
-        "interested": 0.11904761904761904
-      },
-      {
-        "language": "C++",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "manual",
-        "used": 0.0625,
-        "interested": 0.047619047619047616
-      },
-      {
-        "language": "Clojure",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.034482758620689655
-      },
-      {
-        "language": "F#",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.017241379310344827
-      },
-      {
-        "language": "Go",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.035628019323671496,
-        "interested": 0.023809523809523808
-      },
-      {
-        "language": "Haskell",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
-      },
-      {
-        "language": "Java",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.09375,
-        "interested": 0.09523809523809523
-      },
-      {
-        "language": "JavaScript",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.1875,
-        "interested": 0.16666666666666666
-      },
-      {
-        "language": "Objective-C",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "manual",
-        "used": 0.019037300727441572,
-        "interested": 0.023809523809523808
-      },
-      {
-        "language": "PHP",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.21875,
-        "interested": 0.09523809523809523
-      },
-      {
-        "language": "Perl",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.0,
-        "interested": 0.012195121951219513
-      },
-      {
-        "language": "Python",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.125,
-        "interested": 0.11904761904761904
-      },
-      {
-        "language": "Ruby",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.035628019323671496,
-        "interested": 0.023809523809523808
-      },
-      {
-        "language": "Rust",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "manual",
-        "used": 0.043478260869565216,
-        "interested": 0.034482758620689655
-      },
-      {
-        "language": "SQL",
+        "language": "Bash",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.15625,
-        "interested": 0.14285714285714285
+        "used": 0.047619047619047616,
+        "interested": 0.018518518518518517
       },
-      {
-        "language": "Swift",
-        "avg_salary": -1.0,
-        "execution_model": "compiled",
-        "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.047619047619047616
-      }
-    ],
-    "2020": [
       {
         "language": "C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.08333333333333333,
-        "interested": 0.08
+        "used": 0.07142857142857142,
+        "interested": 0.07407407407407407
       },
       {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.08333333333333333,
-        "interested": 0.08
+        "used": 0.047619047619047616,
+        "interested": 0.09259259259259259
       },
       {
         "language": "C++",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.05555555555555555,
-        "interested": 0.12
+        "used": 0.047619047619047616,
+        "interested": 0.037037037037037035
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.034482758620689655
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.025
       },
       {
-        "language": "Dart",
+        "language": "Elixir",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.04
+        "used": 0.011235955056179775,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.017241379310344827
+        "used": 0.012987012987012988,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.020525451559934318
+        "used": 0.025155279503105588,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.16666666666666666,
+        "interested": 0.12962962962962962
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.04
+        "used": 0.02857142857142857,
+        "interested": 0.025
       },
       {
         "language": "Java",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.08333333333333333,
-        "interested": 0.08
+        "used": 0.07142857142857142,
+        "interested": 0.07407407407407407
       },
       {
         "language": "JavaScript",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.1388888888888889,
-        "interested": 0.16
+        "used": 0.14285714285714285,
+        "interested": 0.12962962962962962
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.019037300727441572,
-        "interested": 0.023809523809523808
+        "used": 0.01481031283986949,
+        "interested": 0.018518518518518517
       },
       {
         "language": "PHP",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.1111111111111111,
-        "interested": 0.08
-      },
-      {
-        "language": "Perl",
-        "avg_salary": -1.0,
-        "execution_model": "interpreted",
-        "memory_management": "gc",
-        "used": 0.0,
-        "interested": 0.012195121951219513
-      },
-      {
-        "language": "Python",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.16666666666666666,
-        "interested": 0.12
+        "interested": 0.07407407407407407
       },
       {
-        "language": "R",
+        "language": "Perl",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.014925373134328358
+        "used": 0.0,
+        "interested": 0.010101010101010102
+      },
+      {
+        "language": "Python",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.09523809523809523,
+        "interested": 0.09259259259259259
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.025823264629234777
+        "used": 0.025155279503105588,
+        "interested": 0.018518518518518517
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.027777777777777776,
-        "interested": 0.08
+        "used": 0.02857142857142857,
+        "interested": 0.025
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.1388888888888889,
-        "interested": 0.12
+        "used": 0.11904761904761904,
+        "interested": 0.1111111111111111
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.037037037037037035
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.047619047619047616
+        "used": 0.03888888888888889,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.023809523809523808,
+        "interested": 0.018518518518518517
+      }
+    ],
+    "2020": [
+      {
+        "language": "Bash",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.06521739130434782,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.06521739130434782,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "C#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.06521739130434782,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "C++",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.043478260869565216,
+        "interested": 0.08823529411764706
+      },
+      {
+        "language": "Clojure",
+        "avg_salary": -1.0,
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.025
+      },
+      {
+        "language": "Dart",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Elixir",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
+      },
+      {
+        "language": "F#",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.012987012987012988,
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Go",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.015283355644801428
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.13043478260869565,
+        "interested": 0.11764705882352941
+      },
+      {
+        "language": "Haskell",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Java",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.06521739130434782,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "JavaScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.10869565217391304,
+        "interested": 0.11764705882352941
+      },
+      {
+        "language": "Julia",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
+      },
+      {
+        "language": "Objective-C",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.01481031283986949,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "PHP",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.08695652173913043,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "Perl",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
+      },
+      {
+        "language": "Python",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.13043478260869565,
+        "interested": 0.08823529411764706
+      },
+      {
+        "language": "R",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Ruby",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.021739130434782608,
+        "interested": 0.01888162672476398
+      },
+      {
+        "language": "Rust",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.021739130434782608,
+        "interested": 0.058823529411764705
+      },
+      {
+        "language": "SQL",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.10869565217391304,
+        "interested": 0.08823529411764706
+      },
+      {
+        "language": "Swift",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.037037037037037035
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.049206349206349205,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.023809523809523808,
+        "interested": 0.018518518518518517
       }
     ],
     "2021": [
       {
+        "language": "Bash",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.05952380952380952,
+        "interested": 0.03614457831325301
+      },
+      {
         "language": "C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.09836065573770492,
-        "interested": 0.06896551724137931
+        "used": 0.07142857142857142,
+        "interested": 0.04819277108433735
       },
       {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.09836065573770492,
-        "interested": 0.08620689655172414
+        "used": 0.07142857142857142,
+        "interested": 0.060240963855421686
       },
       {
         "language": "C++",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.09836065573770492,
-        "interested": 0.06896551724137931
+        "used": 0.07142857142857142,
+        "interested": 0.04819277108433735
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.025
+      },
+      {
+        "language": "Crystal",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.034482758620689655
+        "used": 0.011235955056179775,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Dart",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05172413793103448
+        "used": 0.011904761904761904,
+        "interested": 0.03614457831325301
+      },
+      {
+        "language": "Elixir",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.03614457831325301
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.016008620026167937,
-        "interested": 0.017241379310344827
+        "used": 0.011527798044651977,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.017241379310344827
+        "used": 0.011904761904761904,
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.13095238095238096,
+        "interested": 0.12048192771084337
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.0220856102003643,
-        "interested": 0.017241379310344827
+        "used": 0.01648754274548119,
+        "interested": 0.012048192771084338
       },
       {
         "language": "Java",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.08196721311475409,
-        "interested": 0.05172413793103448
+        "used": 0.05952380952380952,
+        "interested": 0.03614457831325301
       },
       {
         "language": "JavaScript",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.21311475409836064,
-        "interested": 0.1896551724137931
+        "used": 0.15476190476190477,
+        "interested": 0.13253012048192772
+      },
+      {
+        "language": "Julia",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Lisp",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.02857142857142857,
+        "interested": 0.025
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.019037300727441572,
-        "interested": 0.023809523809523808
+        "used": 0.01481031283986949,
+        "interested": 0.018518518518518517
       },
       {
         "language": "PHP",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.11475409836065574,
-        "interested": 0.06896551724137931
+        "used": 0.08333333333333333,
+        "interested": 0.04819277108433735
       },
       {
         "language": "Perl",
@@ -643,47 +955,47 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.012195121951219513
+        "interested": 0.010101010101010102
       },
       {
         "language": "Python",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.14754098360655737,
-        "interested": 0.15517241379310345
+        "used": 0.10714285714285714,
+        "interested": 0.10843373493975904
       },
       {
         "language": "R",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.014925373134328358
+        "used": 0.021739130434782608,
+        "interested": 0.00980392156862745
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.025823264629234777
+        "used": 0.021739130434782608,
+        "interested": 0.01888162672476398
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.03278688524590164,
-        "interested": 0.05172413793103448
+        "used": 0.023809523809523808,
+        "interested": 0.03614457831325301
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.08196721311475409,
-        "interested": 0.06896551724137931
+        "used": 0.05952380952380952,
+        "interested": 0.04819277108433735
       },
       {
         "language": "Scala",
@@ -691,113 +1003,233 @@
         "execution_model": "compiled",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.017241379310344827
+        "interested": 0.012048192771084338
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.04819277108433735
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.06896551724137931
+        "used": 0.05952380952380952,
+        "interested": 0.07228915662650602
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.023809523809523808,
+        "interested": 0.018518518518518517
       }
     ],
     "2022": [
       {
+        "language": "APL",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Bash",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.056179775280898875,
+        "interested": 0.0392156862745098
+      },
+      {
         "language": "C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.08196721311475409,
-        "interested": 0.04477611940298507
+        "used": 0.056179775280898875,
+        "interested": 0.029411764705882353
       },
       {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.09836065573770492,
-        "interested": 0.07462686567164178
+        "used": 0.06741573033707865,
+        "interested": 0.049019607843137254
       },
       {
         "language": "C++",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.09836065573770492,
-        "interested": 0.1044776119402985
+        "used": 0.06741573033707865,
+        "interested": 0.06862745098039216
+      },
+      {
+        "language": "COBOL",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "Crystal",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.029850746268656716
+        "used": 0.011235955056179775,
+        "interested": 0.029411764705882353
       },
       {
         "language": "Dart",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011904761904761904,
+        "interested": 0.0392156862745098
+      },
+      {
+        "language": "Elixir",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.029850746268656716
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "Fortran",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.03278688524590164,
-        "interested": 0.05970149253731343
+        "used": 0.02247191011235955,
+        "interested": 0.0392156862745098
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.11235955056179775,
+        "interested": 0.0784313725490196
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011235955056179775,
+        "interested": 0.0392156862745098
       },
       {
         "language": "Java",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.06557377049180328,
-        "interested": 0.07462686567164178
+        "used": 0.0449438202247191,
+        "interested": 0.049019607843137254
       },
       {
         "language": "JavaScript",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.14754098360655737,
-        "interested": 0.13432835820895522
+        "used": 0.10112359550561797,
+        "interested": 0.08823529411764706
+      },
+      {
+        "language": "Julia",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Lisp",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.033707865168539325,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.019037300727441572,
-        "interested": 0.023809523809523808
+        "used": 0.01481031283986949,
+        "interested": 0.018518518518518517
       },
       {
         "language": "PHP",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.08196721311475409,
-        "interested": 0.014925373134328358
+        "used": 0.056179775280898875,
+        "interested": 0.00980392156862745
       },
       {
         "language": "Perl",
@@ -805,47 +1237,47 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.029850746268656716
+        "interested": 0.0196078431372549
       },
       {
         "language": "Python",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.18032786885245902,
-        "interested": 0.08955223880597014
+        "used": 0.12359550561797752,
+        "interested": 0.058823529411764705
       },
       {
         "language": "R",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.014925373134328358
+        "used": 0.021739130434782608,
+        "interested": 0.00980392156862745
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.03278688524590164,
-        "interested": 0.029850746268656716
+        "used": 0.02247191011235955,
+        "interested": 0.0196078431372549
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.03278688524590164,
-        "interested": 0.05970149253731343
+        "used": 0.02247191011235955,
+        "interested": 0.0392156862745098
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.09836065573770492,
-        "interested": 0.07462686567164178
+        "used": 0.06741573033707865,
+        "interested": 0.049019607843137254
       },
       {
         "language": "Scala",
@@ -853,113 +1285,249 @@
         "execution_model": "compiled",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.017241379310344827
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Solidity",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.0,
+        "interested": 0.0196078431372549
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.014925373134328358
+        "used": 0.033707865168539325,
+        "interested": 0.0392156862745098
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.018518518518518517
       }
     ],
     "2023": [
       {
+        "language": "APL",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Bash",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.06896551724137931,
+        "interested": 0.05263157894736842
+      },
+      {
         "language": "C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.1282051282051282,
-        "interested": 0.17391304347826086
+        "used": 0.08620689655172414,
+        "interested": 0.10526315789473684
       },
       {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.10256410256410256,
-        "interested": 0.043478260869565216
+        "used": 0.06896551724137931,
+        "interested": 0.02631578947368421
       },
       {
         "language": "C++",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.10256410256410256,
-        "interested": 0.08695652173913043
+        "used": 0.06896551724137931,
+        "interested": 0.05263157894736842
+      },
+      {
+        "language": "COBOL",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "Crystal",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.029850746268656716
+        "used": 0.011235955056179775,
+        "interested": 0.029411764705882353
       },
       {
         "language": "Dart",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011904761904761904,
+        "interested": 0.0392156862745098
+      },
+      {
+        "language": "Elixir",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.05263157894736842
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.02564102564102564,
-        "interested": 0.043478260869565216
+        "used": 0.017241379310344827,
+        "interested": 0.02631578947368421
+      },
+      {
+        "language": "Fortran",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "GDScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.029411764705882353,
+        "interested": 0.02631578947368421
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.02564102564102564,
-        "interested": 0.08695652173913043
+        "used": 0.017241379310344827,
+        "interested": 0.05263157894736842
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.10344827586206896,
+        "interested": 0.05263157894736842
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011235955056179775,
+        "interested": 0.0392156862745098
       },
       {
         "language": "Java",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.02564102564102564,
-        "interested": 0.06672519754170325
+        "used": 0.017241379310344827,
+        "interested": 0.04534313725490196
       },
       {
         "language": "JavaScript",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.1794871794871795,
-        "interested": 0.13043478260869565
+        "used": 0.1206896551724138,
+        "interested": 0.07894736842105263
+      },
+      {
+        "language": "Julia",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.02631578947368421
+      },
+      {
+        "language": "Lisp",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.034482758620689655,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.02564102564102564,
-        "interested": 0.023809523809523808
+        "used": 0.017241379310344827,
+        "interested": 0.018518518518518517
       },
       {
         "language": "PHP",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.05128205128205128,
-        "interested": 0.03687445127304653
+        "used": 0.034482758620689655,
+        "interested": 0.025735294117647058
       },
       {
         "language": "Perl",
@@ -967,47 +1535,47 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.029850746268656716
+        "interested": 0.0196078431372549
       },
       {
         "language": "Python",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.1794871794871795,
-        "interested": 0.17391304347826086
+        "used": 0.1206896551724138,
+        "interested": 0.10526315789473684
       },
       {
         "language": "R",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.014925373134328358
+        "used": 0.021739130434782608,
+        "interested": 0.00980392156862745
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.03278688524590164,
-        "interested": 0.029850746268656716
+        "used": 0.02247191011235955,
+        "interested": 0.0196078431372549
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.1282051282051282,
-        "interested": 0.2608695652173913
+        "used": 0.08620689655172414,
+        "interested": 0.15789473684210525
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.02564102564102564,
-        "interested": 0.06672519754170325
+        "used": 0.017241379310344827,
+        "interested": 0.04534313725490196
       },
       {
         "language": "Scala",
@@ -1015,113 +1583,257 @@
         "execution_model": "compiled",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.017241379310344827
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Solidity",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.0,
+        "interested": 0.02631578947368421
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.014925373134328358
+        "used": 0.08620689655172414,
+        "interested": 0.07894736842105263
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "Zig",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.034482758620689655,
+        "interested": 0.07894736842105263
       }
     ],
     "2024": [
       {
+        "language": "APL",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Bash",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.11764705882352941,
+        "interested": 0.125
+      },
+      {
         "language": "C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.043478260869565216,
-        "interested": 0.058823529411764705
+        "used": 0.029411764705882353,
+        "interested": 0.041666666666666664
       },
       {
         "language": "C#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.08695652173913043,
-        "interested": 0.11764705882352941
+        "used": 0.058823529411764705,
+        "interested": 0.08333333333333333
       },
       {
         "language": "C++",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.21739130434782608,
-        "interested": 0.17647058823529413
+        "used": 0.14705882352941177,
+        "interested": 0.125
+      },
+      {
+        "language": "COBOL",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0
       },
       {
         "language": "Clojure",
         "avg_salary": -1.0,
-        "execution_model": "interpreted",
+        "execution_model": -1,
+        "memory_management": -1,
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "Crystal",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.029850746268656716
+        "used": 0.011235955056179775,
+        "interested": 0.029411764705882353
       },
       {
         "language": "Dart",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011904761904761904,
+        "interested": 0.0392156862745098
+      },
+      {
+        "language": "Elixir",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.05263157894736842
+      },
+      {
+        "language": "Erlang",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.025
       },
       {
         "language": "F#",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.02564102564102564,
-        "interested": 0.043478260869565216
+        "used": 0.017241379310344827,
+        "interested": 0.02631578947368421
+      },
+      {
+        "language": "Fortran",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.011235955056179775,
+        "interested": 0.0196078431372549
+      },
+      {
+        "language": "GDScript",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.029411764705882353,
+        "interested": 0.02631578947368421
       },
       {
         "language": "Go",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.11764705882352941
+        "used": 0.029411764705882353,
+        "interested": 0.08333333333333333
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.11764705882352941,
+        "interested": 0.125
       },
       {
         "language": "Haskell",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.01639344262295082,
-        "interested": 0.05970149253731343
+        "used": 0.011235955056179775,
+        "interested": 0.0392156862745098
       },
       {
         "language": "Java",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.02564102564102564,
-        "interested": 0.058823529411764705
+        "used": 0.017241379310344827,
+        "interested": 0.041666666666666664
       },
       {
         "language": "JavaScript",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.21739130434782608,
-        "interested": 0.17647058823529413
+        "used": 0.14705882352941177,
+        "interested": 0.125
+      },
+      {
+        "language": "Julia",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Kotlin",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011904761904761904,
+        "interested": 0.02631578947368421
+      },
+      {
+        "language": "Lisp",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "Lua",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.034482758620689655,
+        "interested": 0.029411764705882353
+      },
+      {
+        "language": "Matlab",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.0,
+        "interested": 0.010101010101010102
       },
       {
         "language": "Objective-C",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.02564102564102564,
-        "interested": 0.023809523809523808
+        "used": 0.017241379310344827,
+        "interested": 0.018518518518518517
       },
       {
         "language": "PHP",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.058823529411764705
+        "used": 0.029411764705882353,
+        "interested": 0.041666666666666664
       },
       {
         "language": "Perl",
@@ -1129,47 +1841,47 @@
         "execution_model": "interpreted",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.029850746268656716
+        "interested": 0.0196078431372549
       },
       {
         "language": "Python",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.21739130434782608,
-        "interested": 0.058823529411764705
+        "used": 0.14705882352941177,
+        "interested": 0.041666666666666664
       },
       {
         "language": "R",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.027777777777777776,
-        "interested": 0.014925373134328358
+        "used": 0.021739130434782608,
+        "interested": 0.00980392156862745
       },
       {
         "language": "Ruby",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.043478260869565216,
-        "interested": 0.029850746268656716
+        "used": 0.029411764705882353,
+        "interested": 0.0196078431372549
       },
       {
         "language": "Rust",
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.043478260869565216,
-        "interested": 0.11764705882352941
+        "used": 0.029411764705882353,
+        "interested": 0.08333333333333333
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.043478260869565216,
-        "interested": 0.058823529411764705
+        "used": 0.029411764705882353,
+        "interested": 0.041666666666666664
       },
       {
         "language": "Scala",
@@ -1177,15 +1889,47 @@
         "execution_model": "compiled",
         "memory_management": "gc",
         "used": 0.0,
-        "interested": 0.017241379310344827
+        "interested": 0.012048192771084338
+      },
+      {
+        "language": "Solidity",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.0,
+        "interested": 0.02631578947368421
       },
       {
         "language": "Swift",
         "avg_salary": -1.0,
         "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.012987012987012988,
+        "interested": 0.00980392156862745
+      },
+      {
+        "language": "TypeScript",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
         "memory_management": "gc",
-        "used": 0.014084507042253521,
-        "interested": 0.014925373134328358
+        "used": 0.058823529411764705,
+        "interested": 0.07894736842105263
+      },
+      {
+        "language": "VB.NET",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "gc",
+        "used": 0.011235955056179775,
+        "interested": 0.018518518518518517
+      },
+      {
+        "language": "Zig",
+        "avg_salary": -1.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.034482758620689655,
+        "interested": 0.041666666666666664
       }
     ]
   }

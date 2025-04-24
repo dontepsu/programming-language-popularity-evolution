@@ -1,8 +1,8 @@
 {
   "country": "Pakistan",
   "age": "55-64 years old",
-  "max_used": 0.16666666666666666,
-  "max_interested": 0.3333333333333333,
+  "max_used": 0.14285714285714285,
+  "max_interested": 0.25,
   "years": {
     "2019": [
       {
@@ -10,7 +10,7 @@
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.16666666666666666,
+        "used": 0.14285714285714285,
         "interested": 0.0
       },
       {
@@ -18,23 +18,31 @@
         "avg_salary": -1.0,
         "execution_model": "compiled",
         "memory_management": "manual",
-        "used": 0.16666666666666666,
+        "used": 0.14285714285714285,
         "interested": 0.0
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": -1.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.14285714285714285,
+        "interested": 0.25
       },
       {
         "language": "PHP",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.16666666666666666,
-        "interested": 0.3333333333333333
+        "used": 0.14285714285714285,
+        "interested": 0.25
       },
       {
         "language": "R",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.16666666666666666,
+        "used": 0.14285714285714285,
         "interested": 0.0
       },
       {
@@ -42,16 +50,16 @@
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "gc",
-        "used": 0.16666666666666666,
-        "interested": 0.3333333333333333
+        "used": 0.14285714285714285,
+        "interested": 0.25
       },
       {
         "language": "SQL",
         "avg_salary": -1.0,
         "execution_model": "interpreted",
         "memory_management": "na",
-        "used": 0.16666666666666666,
-        "interested": 0.3333333333333333
+        "used": 0.14285714285714285,
+        "interested": 0.25
       }
     ]
   }

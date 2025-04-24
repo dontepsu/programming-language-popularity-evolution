@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { interval, merge, of } from "rxjs";
+import { interval, merge, of, Subject } from "rxjs";
 import { switchMap, map, startWith, takeUntil, scan, distinctUntilChanged, tap } from "rxjs/operators";
 
 
@@ -277,44 +277,50 @@ const render = (aggregateData, { control$, event$ }) => {
         }
     }
 
-    const play$ = interval(DEFAULT_CHANGE_INTERVAL).pipe(map(() => ({ type: 'tick' })));
+    const destroy$ = new Subject();
+
+    const play$ = interval(DEFAULT_CHANGE_INTERVAL).pipe(
+        takeUntil(destroy$),
+        map(() => ({ type: 'tick' }))
+    );
 
     const reactiveYear$ = control$.pipe(
+        takeUntil(destroy$),
         startWith({ type: 'play' }),
         switchMap(event => {
             if (event.type === 'play') {
                 return merge(
                     play$,
-                    control$.pipe(takeUntil(play$)) // override with pause or year
+                    control$.pipe(takeUntil(play$), takeUntil(destroy$))
                 );
             }
             return of(event);
         }),
         scan((yearIdx, event) => {
             if (event.type === 'tick') return (yearIdx + 1) % yearKeys.length;
-            if (event.type === 'year') {
-                const idx = yearKeys.indexOf(event.value);
-                return idx === -1 ? yearIdx : idx;
-            }
+            if (event.type === 'year') return yearKeys.indexOf(event.value) ?? yearIdx;
             return yearIdx;
         }, 0),
         distinctUntilChanged(),
-        tap(yearIdx => {
-            const year = yearKeys[yearIdx];
-            event$.next({ event: BubbleChartEvents.year_changed, data: { year, index: yearIdx } });
-        }),
+        tap(yearIdx => event$.next({
+            event: BubbleChartEvents.year_changed,
+            data: { year: yearKeys[yearIdx], index: yearIdx }
+        })),
+        takeUntil(destroy$)
     );
 
-    const subscription = reactiveYear$.subscribe(i => {
-        update(yearKeys[i]);
-    });
-
+    const sub = reactiveYear$.subscribe(i => update(yearKeys[i]));
 
     return () => {
-        // clean up
-        svg.selectAll("*").remove();
-        subscription.unsubscribe();
-    }
+        destroy$.next();
+        destroy$.complete();
+
+        svg.interrupt();
+
+        svg.selectAll('*').remove();
+
+        sub.unsubscribe();
+    };
 }
 
 /**
@@ -357,7 +363,7 @@ export const renderBubbleChart = async ({
 }
 
 
-export const BubbleChartEvents=  {
+export const BubbleChartEvents = {
     data_loaded: 'data_loaded',
     year_changed: 'year_changed',
     color_scale_created: 'color_scale_created'

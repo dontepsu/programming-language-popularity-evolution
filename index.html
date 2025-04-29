@@ -62,22 +62,27 @@
 
     <div id="viz-description">
       <p>
-        This animated bubble chart visualizes the evolution of programming language popularity using
-        <strong>Stack Overflow Developer Survey</strong> data.
+        This animated bubble chart shows the evolution of programming language popularity over time,
+        based on data from the <strong>Stack Overflow Developer Survey</strong>.
       </p>
       <p>
-        The <strong>x-axis</strong> shows the relative usage frequency, and the <strong>y-axis</strong> shows interest
-        (developers who want to use a language).
-        Both axes use a <strong>logarithmic scale</strong> to reduce clutter and improve visibility of smaller values.
+        Each bubble represents a programming language. The <strong>x-axis</strong> indicates usage frequency, and the <strong>y-axis</strong> shows developer interest (i.e., how many developers want to use the language).
+        Both axes use a <strong>logarithmic scale</strong> to make differences easier to see, especially for less common languages.
       </p>
       <p>
-        Each bubble's <strong>size</strong> represents the average reported salary for that language.
-        The <strong>color</strong> encodes a cluster based on the language's
-        <em>memory management</em> strategy and whether it's <em>compiled or interpreted</em>.
+        The <strong>size</strong> of each bubble corresponds to the average salary reported for developers using that language.
+        The <strong>color</strong> of the bubble encodes the language's characteristics, such as its <em>memory management</em> strategy and whether it is <em>compiled</em> or <em>interpreted</em>.
       </p>
       <p>
-        You can <strong>click a language bubble</strong> to <em>track or untrack</em> it during the animation.
-        This lets you follow a specific language's trajectory across years.
+        The chart is animated to show how these values change over time. Use the <strong>timeline slider</strong> at the bottom to go through different years manually, or press the <strong>play button</strong> to watch the full animation.
+      </p>
+      <p>
+        To track a specific language, simply <strong>click on its bubble</strong>. This will highlight its movement through the years.
+        Click again to untrack it. Tracked languages remain highlighted even as others move or fade.
+      </p>
+      <p>
+        Hover over any bubble to see exact values for that year, including usage, interest, and salary.
+        Use the <strong>legend</strong> to understand what each color cluster represents.
       </p>
       <p style="margin-top: 1em;">
         <a href="https://github.com/dontepsu/programming-language-popularity-evolution" target="_blank"
@@ -88,6 +93,7 @@
         </a>
       </p>
     </div>
+    
 
   </div>
 

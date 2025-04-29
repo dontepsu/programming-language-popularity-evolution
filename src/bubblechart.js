@@ -191,21 +191,6 @@ const render = (aggregateData, { control$, event$ }) => {
                 .attr("r", d => r(d.avg_salary || 0))
                 .attr("fill", d => colorScale(d.colorKey))
                 .attr("opacity", 0.7)
-                .on("mouseover", (event, d) => {
-                    tooltip.style("display", "block")
-                        .style("left", (event.pageX + 5) + "px")
-                        .style("top", (event.pageY - 28) + "px")
-                        .html(`
-                          <strong>${d.language}</strong>
-                          <br>
-                          Used: ${(d.used * 100).toFixed(2)}%
-                          <br>
-                          Interested: ${(d.interested * 100).toFixed(2)}%
-                          <br>
-                          Salary: ${d.avg_salary ? `$${Math.round(d.avg_salary)}` : "N/A"}
-                        `);
-                })
-                .on("mouseout", () => tooltip.style("display", "none"))
                 .on("click", (event, d) => {
                     if (trackedLanguages.has(d.language)) {
                         trackedLanguages.delete(d.language);
@@ -230,6 +215,13 @@ const render = (aggregateData, { control$, event$ }) => {
                 .attr("r", d => r(d.avg_salary || 0)),
             exit => exit.remove()
         );
+
+
+
+
+
+
+
 
         // Update the language labels.
         // Ensure that all circles are updated with the current tracked languages!!

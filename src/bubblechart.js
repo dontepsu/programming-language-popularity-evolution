@@ -11,6 +11,17 @@ const margin = { top: 20, right: 30, bottom: 30, left: 40 };
 const DEFAULT_CHANGE_INTERVAL = 2000;
 const MAX_D = 0.1
 
+export const BubbleChartEvents = {
+    data_loaded: 'data_loaded',
+    year_changed: 'year_changed',
+    color_scale_created: 'color_scale_created'
+}
+
+export const BubbleChartAnimationEvents = {
+    play: 'play',
+    pause: 'pause',
+}
+
 /**
  * Global set to track languages that have been toggled on.
  * @type {Set<string>}
@@ -121,6 +132,9 @@ const createYearLabel = (svg, currentYear, width, height) =>
         .attr("opacity", YEAR_LABEL_OPACITY)
         .text(currentYear);
 
+
+// I didn't want to spend more time so this will suffice :)
+let uglyHackToPresistTheAnimationState = BubbleChartAnimationEvents.pause
 
 /**
  * Renders the bubble chart visualization using the aggregated data.
@@ -278,8 +292,9 @@ const render = (aggregateData, { control$, event$ }) => {
 
     const reactiveYear$ = control$.pipe(
         takeUntil(destroy$),
-        startWith({ type: BubbleChartAnimationEvents.pause }),
+        startWith({ type: uglyHackToPresistTheAnimationState }),
         switchMap(event => {
+            uglyHackToPresistTheAnimationState = event.type
             if (event.type === BubbleChartAnimationEvents.play) {
                 return merge(
                     play$,
@@ -353,16 +368,3 @@ export const renderBubbleChart = async ({
         return () => { }
     }
 }
-
-
-export const BubbleChartEvents = {
-    data_loaded: 'data_loaded',
-    year_changed: 'year_changed',
-    color_scale_created: 'color_scale_created'
-}
-
-export const BubbleChartAnimationEvents = {
-    play: 'play',
-    pause: 'pause',
-}
-

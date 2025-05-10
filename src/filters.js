@@ -48,7 +48,8 @@ export const registerFilters = () => {
         event.preventDefault()
         const params = new URLSearchParams(window.location.search);
         if (event.target.value) {
-            params.set('country', event.target.value);
+            const countrySafe = (event.target.value || '').replace(' ', '_')
+            params.set('country', countrySafe);
         } else {
             params.delete('country')
         }

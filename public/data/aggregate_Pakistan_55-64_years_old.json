@@ -1,9 +1,35 @@
 {
   "country": "Pakistan",
   "age": "55-64 years old",
-  "max_used": 0.14285714285714285,
+  "max_used": 0.3333333333333333,
   "max_interested": 0.25,
   "years": {
+    "2018": [
+      {
+        "language": "C++",
+        "avg_salary": 692600.0,
+        "execution_model": "compiled",
+        "memory_management": "manual",
+        "used": 0.3333333333333333,
+        "interested": -1.0
+      },
+      {
+        "language": "HTML/CSS",
+        "avg_salary": 692600.0,
+        "execution_model": "interpreted",
+        "memory_management": "na",
+        "used": 0.3333333333333333,
+        "interested": -1.0
+      },
+      {
+        "language": "Perl",
+        "avg_salary": 692600.0,
+        "execution_model": "interpreted",
+        "memory_management": "gc",
+        "used": 0.3333333333333333,
+        "interested": -1.0
+      }
+    ],
     "2019": [
       {
         "language": "C",

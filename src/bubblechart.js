@@ -87,15 +87,15 @@ const setUpAxis = (svg, width, height, maxX, maxY) => (x, y) => {
         .attr("x", width / 2)
         .attr("y", height - margin.bottom - 20)
         .style("text-anchor", "middle")
-        .text("% of languages used the past year");
-
+        .text("Usage in Past Year (% of Developers, log scale)");
+    
     svg.append("text")
         .attr("class", "y-axis-label")
         .attr("x", -height / 2)
         .attr("y", 70)
         .attr("transform", "rotate(-90)")
         .attr("text-anchor", "middle")
-        .text("% of languages excited to use the next year");
+        .text("Interest for Next Year (% of Developers, log scale)");
 };
 
 
@@ -278,9 +278,9 @@ const render = (aggregateData, { control$, event$ }) => {
 
     const reactiveYear$ = control$.pipe(
         takeUntil(destroy$),
-        startWith({ type: 'play' }),
+        startWith({ type: BubbleChartAnimationEvents.pause }),
         switchMap(event => {
-            if (event.type === 'play') {
+            if (event.type === BubbleChartAnimationEvents.play) {
                 return merge(
                     play$,
                     control$.pipe(takeUntil(play$), takeUntil(destroy$))
@@ -360,3 +360,9 @@ export const BubbleChartEvents = {
     year_changed: 'year_changed',
     color_scale_created: 'color_scale_created'
 }
+
+export const BubbleChartAnimationEvents = {
+    play: 'play',
+    pause: 'pause',
+}
+

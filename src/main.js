@@ -1,7 +1,7 @@
 import { fromEventPattern, merge, map, startWith, distinctUntilChanged, Subject, filter } from "rxjs";
 
 import { registerFilters } from './filters'
-import { renderBubbleChart, BubbleChartEvents } from './bubblechart'
+import { renderBubbleChart, BubbleChartEvents, BubbleChartAnimationEvents } from './bubblechart'
 
 import './style.css'
 
@@ -19,7 +19,7 @@ const registerAnimationControls = () => {
     function togglePlay(state) {
         playing = state;
         playBtn.textContent = playing ? "⏸" : "▶";
-        bubbleControl$.next({ type: playing ? "play" : "pause" });
+        bubbleControl$.next({ type: playing ? BubbleChartAnimationEvents.play : BubbleChartAnimationEvents.pause });
     }
 
 
